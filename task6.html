@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+         table,td{
+            border: 2px;
+            border-collapse: collapse;
+            border-spacing: 10px;
+            background-color: darkblue;
+            color: yellow;
+        }
+        th,td{
+            padding: 10px;
+        }
+        table{
+            align-content: center;
+            width: 500px;
+            height: 250px;
+        }
+        #l{
+            text-align: left;
+        }
+        /* th{
+            background-color: orange;
+        } */
+        #submit{
+            background-color: #4CAF50; /* Green */
+  border: none;
+  color: white;
+  padding: 10px 32px;
+  text-align: right;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin-right: 2px;
+        }
+        #cancel{
+            background-color: red;
+  border: none;
+  color: black;
+  padding: 10px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+        }
+        #r{
+            text-align: right;
+        }
+    </style>
+</head>
+<body>
+    <center>
+        <table>
+            <tr>
+                <th colspan="4" style="text-align: left; background-color: orange;">Sign Up</th>
+            </tr>
+            <tr>
+                <td colspan="2" id="r">First Name</td>
+                <td id="l" colspan="2"><input type="text" name="fnam" id="fnam" placeholder="Enter First Name"></td>
+            </tr>
+            <tr>
+                <td colspan="2" id="r">Last Name</td>
+                <td id="l" colspan="2"><input type="text" name="lnam" id="lnam" placeholder="Enter Last Name"></td>
+            </tr>
+            <tr>
+                <td colspan="2" id="r">Date of Birth</td>
+                <td id="l" colspan="2"><select name="dob" id="dob"><option value="dob">Date</option></select>
+                <select name="dob" id="dob"><option value="dob">Month</option></select>
+                <select name="dob" id="dob"><Option>Year</Option></select>
+            </td>
+            </tr>
+            <tr>
+                <td colspan="2" id="r">Gender</td>
+                <td id="l" colspan="2"> 
+                    <input type="radio" name="fm" id="fm">
+                    <label for="fm">Male</label>
+                    <input type="radio" name="fm" id="fm">
+                    <label for="fm">Female</label>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2" id="r">Country</td>
+                <td colspan="2" id="l"><select name="cou" id="">
+                    <option value="sel">Country</option>
+                    <option value="India">India</option>
+                    <option value="Us">USA</option>
+                    <option value="UK">UK</option>
+                    <option value="Aus">Australia</option>
+                </select>
+
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2" id="r">E-mail</td>
+                <td colspan="2" id="l"><input type="email" name="em" id="em" placeholder="Enter E-mail"></td>
+            </tr>
+            <tr>
+                <td colspan="2" id="r">Phone</td>
+                <td colspan="2" id="l"><input type="number" name="nm" id="nm" placeholder="Enter Phone"></td>
+            </tr>
+            <tr>
+                <td colspan="2" id="r">Password</td>
+                <td  colspan="2"id="l"><input type="password" name="ps" id="ps"></td>
+            </tr>
+             <tr>
+                <td colspan="2" id="r"> Confirm Password</td>
+                <td  colspan="2"id="l"><input type="password" name="ps" id="ps"></td>
+            </tr>
+            <tr>
+                <td colspan="2"></td>
+                <td colspan="2" style="text-align:left ;"><input type="checkbox" name="agr" id="agr"> <label for="agr">I Agree to the Terms of use</label></td>
+            </tr>
+            
+        </table>
+        <form action="">
+        <table style="background-color: orange; width: 500px; height: 10px;">
+            <tr>
+                <th style="text-align: right; padding: 10px;">
+                <!-- <input type="submit" placeholder="Submit" name="submit" id="submit"> -->
+      <button id="submit" type="submit"  >Submit</button>
+             <button id="cancel" type="reset" >Cancel</button>
+                <!-- <input type="reset" name="cancel" id="cancel" placeholder="Cancel"> -->
+                </tr>
+                </th>
+            </tr>
+            </table>
+        </form>
+    </center>
+</body>
+</html>

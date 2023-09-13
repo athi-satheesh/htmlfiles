@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        th{
+            background-color: palegoldenrod;
+            color: red;
+            font-size: 25px;
+            padding: 10px;
+        }
+        td{
+            background-color: aqua;
+        }
+        table{
+            border-spacing: 10px;
+            height: 100%;
+            width: 100%;
+        }
+        #button{
+            background-color: white;
+  border: none;
+  color: black;
+  padding: 10px 15px;
+  text-align: right;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin-right: 2px;
+        }
+    </style>
+</head>
+<body>
+    <form action="">
+        <fieldset style="width: 390px; height: 500px;">
+        <Center><table>
+            <tr>
+            <th colspan="3" style="text-align: center;">Registration Form</th></tr>
+            <tr>
+                <td>Enter Name</td>
+<td>
+    <input type="text" name="name" id="name">
+</td>
+            </tr>
+            <tr>
+                <td>Enter Password</td>
+<td colspan="2">
+    <input type="password" name="pass" id="pass">
+</td>
+            </tr>
+            <tr>
+                <td>Enter Address</td>
+                <td colspan="2"><textarea rows="4" cols="20" name="comment" form="usrform"></textarea></td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="select">Select Game</label>
+                </td>
+                <td colspan="2">
+                    <input type="checkbox" name="hoc" id="hoc">
+                    <label for="hoc">Hockey</label><br>
+                    <input type="checkbox" name="foo" id="foo">
+                    <label for="foo">Football</label><br>
+                    <input type="checkbox" name="bad" id="bad">
+                    <label for="bad">Badtminton</label><br>
+                    <input type="checkbox" name="cri" id="cri">
+                    <label for="cri">Cricket</label><br>
+                    <input type="checkbox" name="vol" id="vol">
+                    <label for="vol">Volleyball</label>
+                </td>
+            </tr>
+            <tr>
+                <td>Gender</td>
+                <td colspan="2">
+                    <input type="radio" name="fm" id="fm">
+                    <label for="fm">Male</label>
+                    <input type="radio" name="fm" id="fm">
+                    <label for="fm">Female</label>
+                </td>
+            </tr>
+            <tr>
+                <td>Select your age</td>
+                <td colspan="2">
+                    <select name="Sel" id="sel">
+                        <option value="sel">Select</option>
+                        <option value="a">5-10(yrs)</option>
+                        <option value="b">11-15(yrs)</option>
+                        <option value="c">16-20(yrs)</option>
+                        <option value="d">21-25(yrs)</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>Select Photo</td>
+                <td colspan="2">
+                    <input type="file" name="photo" id="photo" placeholder="Choose" File>
+                </td>
+            </tr>
+           
+        </table>
+        <table style="background-color: aqua; width: 370px; height: 10px;">
+            <tr>
+                <td>
+                <!-- <input type="click" name="click" id="click" placeholder="Click Me"></td> -->
+                <button type="submit" id="button"> Click Me</button>
+             <td> <button type="submit" id="button">Submit</button></td>
+           <td>  <button type="reset" id="button"> Reset Me</button></td>
+                     </tr>
+        </table>
+        </Center>
+    </fieldset> </form>
+</body>
+</html>
