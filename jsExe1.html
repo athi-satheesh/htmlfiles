@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <h1 id="class">Welcome</h1>
+    <h2 class="class">Class1</h2>
+    <h3 class="class">Class2</h3>
+    <h4 class="class3">Class3</h4>
+    
+    <script>
+        var a = 40;
+        var b =90;
+        const c = 100;
+        let sum= a+b+c;
+        // document.write("<h4>Hi lets find sum</h4>")
+        // document.write("SUM=", sum)
+        // console.log("Hi There")
+        // document.getElementById("class").innerHTML="abc"
+        // document.getElementsByClassName("class")[0].innerHTML="Class1 it is"
+        // document.getElementsByClassName("class3")[0].innerHTML="Class3 changed"
+        let heading1 = document.querySelector(".class");
+        heading1.innerHTML=`sum is ${sum}`
+    </script>
+</body>
+</html>

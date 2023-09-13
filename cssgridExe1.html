@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            height: 100vh;
+            background-color: green;
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+            grid-template-areas: "one two two two" 
+            "one three three four"
+            "one five five five" 
+            "one six six seven"
+            "eight eight eight eight";
+            
+
+        }
+        /* .item{
+            border: 1px solid red;
+        } */
+        .item1{
+            grid-area: one;
+            border: 1px solid red;
+        }
+        .item2{
+            grid-area: two;
+            border: 1px solid red;
+        }
+        .item3{
+            grid-area: three;
+            border: 1px solid red;
+        }
+        .item4{
+            grid-area: four;
+            border: 1px solid red;
+        }
+        .item5{
+            grid-area: five;
+            border: 1px solid red;
+        }
+        .item6{
+            grid-area: six;
+            border: 1px solid red;
+        }
+        .item7{
+            grid-area: seven;
+            border: 1px solid red;
+        }
+        .item8{
+            grid-area: eight;
+            border: 1px solid red;
+        }
+        body{
+            margin: 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="container item">
+    <div class="item1">
+        div1 Lorem, ipsum dolor sit amet consectetur adipisicing elit. Magni alias, minus libero aliquid id possimus obcaecati temporibus quidem omnis ea eveniet sint. Ex aliquam architecto in perspiciatis aut deserunt quisquam.
+    </div >
+    <div class="item2">
+        div2 Lorem, ipsum dolor sit amet consectetur adipisicing elit. Magni alias, minus libero aliquid id possimus obcaecati temporibus quidem omnis ea eveniet sint. Ex aliquam architecto in perspiciatis aut deserunt quisquam.
+    </div>
+    <div class="item3">
+        div3 Lorem, ipsum dolor sit amet consectetur adipisicing elit. Magni alias, minus libero aliquid id possimus obcaecati temporibus quidem omnis ea eveniet sint. Ex aliquam architecto in perspiciatis aut deserunt quisquam.
+    </div>
+    <div class="item4">
+        div4 Lorem, ipsum dolor sit amet consectetur adipisicing elit. Magni alias, minus libero aliquid id possimus obcaecati temporibus quidem omnis ea eveniet sint. Ex aliquam architecto in perspiciatis aut deserunt quisquam.
+    </div>
+    <div class="item5">
+        div5 Lorem, ipsum dolor sit amet consectetur adipisicing elit. Magni alias, minus libero aliquid id possimus obcaecati temporibus quidem omnis ea eveniet sint. Ex aliquam architecto in perspiciatis aut deserunt quisquam.
+    </div>
+    <div class="item6">
+        div6 Lorem, ipsum dolor sit amet consectetur adipisicing elit. Magni alias, minus libero aliquid id possimus obcaecati temporibus quidem omnis ea eveniet sint. Ex aliquam architecto in perspiciatis aut deserunt quisquam.
+    </div>
+    <div class="item7">
+        div7 Lorem, ipsum dolor sit amet consectetur adipisicing elit. Magni alias, minus libero aliquid id possimus obcaecati temporibus quidem omnis ea eveniet sint. Ex aliquam architecto in perspiciatis aut deserunt quisquam.
+    </div>
+    <div class="item8">
+        div8 Lorem, ipsum dolor sit amet consectetur adipisicing elit. Magni alias, minus libero aliquid id possimus obcaecati temporibus quidem omnis ea eveniet sint. Ex aliquam architecto in perspiciatis aut deserunt quisquam.
+    </div>
+</div>
+</body>
+</html>
