@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function validateform(){
+            var name = document.getElementById("name").value;
+            var password = document.getElementById("pass").value
+            if(name=="" || name==null){
+                document.getElementById("namespan").innerHTML="please enter name"
+                return false;
+            }
+            elseif(password.length<6){
+                document.getElementById("passspan").innerHTML = "please enter password"
+                return false;
+            }
+
+        }
+        function cleaning(sp){
+            document.getElementById(sp).innerHTML=" "
+        }
+    </script>
+
+    <form action=".." name="myform" method="post" onsubmit="return validateform()">
+    <label>Name:&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp </label>
+    <input type="text" id="name" onkeyup="cleaning('namespan')">
+    <span id="namespan" style="color: red;"></span><br><br>
+    <label>Password:</label>
+    <input type="password" name="pass" id="pass" onkeyup="cleaning('passspan')"><br>
+    <span id="passspan" style="color: red;"></span>
+    <br>
+    <input type="submit" name="submit" id="submit" value="submit">
+    </form>
+    
+</body>
+</html>
