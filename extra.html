@@ -1,18 +1,144 @@
-<form action="login.html">
-  <fieldset>
-    <table>
-      <tr>
-        <th colspan="3"></th>
-      </tr>
-      <tr>
-        <td>Enter Your Username</td>
-        <td><input type="text" name="uname" id="uname" placeholder="Enter Username"></td>
-      </tr>
-      <tr>
-        <td>Enter Your Password</td>
-        <td><input type="password" name="pname" id="pname" placeholder="Enter Password"></td>
-      </tr>
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Futura labs</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        a:link{
+            color: black;
+            background: transparent;
+        }
+        a:visited{
+            color: black;
+            background: transparent;
+        }
+        a:hover{
+            color: orange;
+            background: transparent;
+        }
+        a:active{
+            color: blue;
+            background: transparent;
+        }
+        .btn-grad {
+            background-image: linear-gradient(to right, #fe8c00 0%, #f83600  51%, #fe8c00  100%);
+            margin: 10px;
+            padding: 15px 25px;
+            text-align: center;
+            transition: 0.5s;
+            background-size: 200% auto;
+            color: white;            
+            /* box-shadow: 0 0 20px #eee; */
+            border-radius: 5px;
+            border: none;
+            display: block;
+          }
+          .btn-grad:hover {
+            background-position: right center; /* change the direction of the change here */
+            color: #fff;
+            text-decoration: none;
+          }
+          .arrow {
+               border: solid white;
+               border-width: 0 3px 3px 0;
+              display: inline-block;
+              padding: 3px;
+        }
+        .right {
+             transform: rotate(-45deg);
+            -webkit-transform: rotate(-45deg);
+        }
+        #bd{
+          background-color: rgb(92, 0, 128);
+          height: 700px;
+          color: white;
+          text-align: center;
+        }
+        .down {
+  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+}
 
-    </table>
-  </fieldset>
-</form>
+.wrapper{
+  /* border: 10px solid  #4dc247; */
+    box-shadow: 0 0 35px  #4dc247;
+    transition: all 0.5s ease;
+    text-shadow: 0 0 15px  #d1ddd0;
+    cursor: pointer;
+    border-radius: 100%;
+    border: 4px solid white;
+    float: right;
+    transition: all 0.5s ease;
+}
+    </style>
+  </head>
+  <body>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+    <div >
+        <nav class="navbar navbar-expand-lg" style="height: 70px;" >
+            <div class="container-fluid" style="background-color:white; font-family:sans-serif; margin-top: 20px;">
+                <img src="futura icon.png" alt="icon" style="height: 60px; width: 60px;">
+              <a class="navbar-brand" id="1" href="#" style="color: rgb(92, 0, 128); font-size: 21px; margin-top: 30px; letter-spacing: 0px;"><strong>FUTURA LABS<br><p style="font-size: 8px; letter-spacing: 0;">ENABLE-TRANSFORM-ACCELERATE</p></strong></a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0" style="margin-left: 180px;">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#">Home&nbsp;</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">About&nbsp;</a>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      Internship&nbsp;
+                    </a>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="#"><img src="python.png" alt="python" style="height: 50px; width: 50px;">&nbsp;&nbsp;Python-Django Fullstack</a></li>
+                      <li><a class="dropdown-item" href="#"><img src="laravel.png" alt="php" style="height: 40px; width: 40px;">&nbsp;&nbsp; PHP-Laravel Fullstack</a></li>
+                      <li><a class="dropdown-item" href="#"><img src="mern.png" alt="mern" style="height: 40px; width: 50px;">&nbsp;&nbsp;Mern Fullstack</a></li>
+                      <li><a class="dropdown-item" href="#"><img src="flutter.jpg" alt="flutter" style="height: 50px; width: 50px;">&nbsp;Flutter Mobile App</a></li>
+                      <li><a class="dropdown-item" href="#"><img src="react.webp" alt="react" style="height: 40px; width: 40px;">&nbsp;&nbsp;React JS</a></li>
+                    </ul>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Placements&nbsp;</a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="#" class="nav-link">Careers&nbsp;</a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="#" class="nav-link">Contact&nbsp;</a>
+                  </li><br>
+                </ul>
+                <div style="padding-right: 250px;">
+                  <button class="btn-grad">Get in Touch <i class="arrow right">
+                  </button></i>
+                </div>
+                
+              </div>
+              
+            </div>
+          </nav>
+    </div>
+    <div id="bd">
+     <p style="font-size: 90px;"><b> <br>Enable. Transform. Accelerate</b></p>
+      <p style="margin-top: 50px;">Be a part of FUTURA LABS, the best learning platform to transform you into a skilled and trained IT<br> professional. We are one of Calicut's most trusted software training institutes, with the highest placement <br>records. Join our hands to get your dream job and stand firm in the industry with all the confidence and<br> proficiency.</p><br><br>
+      <div >
+        
+        <button class="btn-grad" style="float: left;margin-left: 450px; width: 200px;">Get in Touch <i class="arrow down">
+        </button></i>
+        <button class="btn-grad" style="float: right; margin-right: 480px;">Call: 799 442 00 46 <i class="arrow down">
+        </button></i>
+      </div>
+<div>
+  <i class="fa fa-whatsapp wrapper" style="font-size:48px;color:rgb(5, 85, 5); margin-right: 70px;"></i>
+</div>
+
+    </div>
+  </body>
+</html>

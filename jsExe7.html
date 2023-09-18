@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="veggies"></p>
+    <script>
+        const veg = ["cabbage", "carrot", "beans", "cauliflower"]
+         document.getElementById("veggies").innerHTML= veg.toString();
+        // document.getElementById("veggies").innerHTML = veg.join("-")
+        // document.getElementById("veggies").innerHTML=veg;
+        // // veg.pop();
+        // // delete veg[2]
+        // // veg.splice(1,1)
+        // document.getElementById("veggies").innerHTML=veg
+        // veg.push("beetroot")
+        // document.getElementById("veggies").innerHTML=veg
+        // veg.splice(2,0,"kiwi","tomato")
+        // document.getElementById("veggies").innerHTML=veg
+        //document.write(veg.slice(1,2) +"<br>")
+        //document.getElementById("veggies").innerHTML = veg.reverse();
+        //document.getElementById("veggies").innerHTML = veg.sort();
+        const age = [23,12,56,89]
+        document.getElementById("veggies").innerHTML=age.filter(checkAdult);
+        function checkAdult(age){
+            return age>=18;
+        }
+    </script>
+    
+</body>
+</html>

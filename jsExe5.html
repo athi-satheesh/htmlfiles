@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        class values{
+            constructor(l,b){
+                this.l = 20;
+                this.b = 5;
+            }
+            area(){
+                let area = this.l*this.b
+                document.write("Area ", area)
+            }
+        }
+        class area extends values{
+           
+            area(){
+                super.area();
+               
+                document.write(" <BR>Area printed")
+            }
+        }
+        var rec = new area;
+        rec.area();
+         
+    </script>
+</body>
+</html>

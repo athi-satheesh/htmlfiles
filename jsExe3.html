@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inheritance</title>
+</head>
+<body>
+    <script>
+        class Car{
+            constructor(company){
+                this.company = "Nexon"
+            }
+        }
+        class vehicle extends Car{
+            constructor(version, rate){
+                super();
+                this.version= version;
+                this.rate=rate;
+            }
+        }
+        var veh = new vehicle("XM", 850000)
+        document.write(veh.company+" "+ veh.version+" "+ veh.rate);
+    </script>
+</body>
+</html>
